@@ -12,11 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@libs/react-component": "*",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.2.2",
-    "@libs/react-component": "*"
+    "styled-components": "^6.0.7",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.5.9",
