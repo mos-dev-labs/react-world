@@ -1,12 +1,7 @@
 'use client'
-import React, { useRef } from 'react'
-import { Button } from '@libs/react-component'
+import React from 'react'
+import { Grid } from '@libs/react-component'
 
 export default function Page() {
-  const ref = useRef<HTMLButtonElement>(null)
-  return (
-    <h1>
-      <Button text="button" ref={ref} />
-    </h1>
-  )
+  return <Grid cell={8}>test</Grid>
 }
