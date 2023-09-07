@@ -1,15 +1,20 @@
+import styled from 'styled-components'
 import React from 'react'
-import styled from "styled-components";
 
-interface Props extends HTMLDivElement {
-    cell: number
+interface Props extends React.HTMLProps<HTMLDivElement> {
+  cell: number
+  children?: React.ReactNode
 }
-export const Grid = ({cell, ...props}: Props) => {
-
-    return <GridStyled cell={cell} {...props} />
+export const Grid = ({ cell, children, ...props }: Props) => {
+  return (
+    <GridStyled cell={cell} {...props}>
+      {children}
+    </GridStyled>
+  )
 }
 
-const GridStyled = styled.div`
-  width: ${props => (props.cell * 32) + (props.cell - 1) * 8}px;
-  height: 100%;
+const GridStyled = styled.div<{ cell: number }>`
+  width: ${(props) => {
+    return 120 * props.cell + (props.cell + 1) * 20
+  }}px;
 `
