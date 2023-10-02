@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "preserveConstEnums": true,
     "paths": {
       "@/src/*": [
@@ -8,6 +9,9 @@
       ],
       "@/app/*": [
         "./app/*"
+      ],
+      "@/styles/*": [
+        "./styles/*"
       ]
     },
     "plugins": [
