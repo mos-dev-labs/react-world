@@ -1,5 +1,4 @@
 import { ForwardedRef, forwardRef } from 'react'
-import styled from 'styled-components'
 
 interface Props {
   text: string
@@ -7,10 +6,6 @@ interface Props {
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
   ({ text }: Props, ref: ForwardedRef<HTMLButtonElement>) => {
-    return <BasicButton ref={ref}>{text}</BasicButton>
+    return <button ref={ref}>{text}</button>
   }
 )
-
-const BasicButton = styled.button`
-  color: white;
-`
