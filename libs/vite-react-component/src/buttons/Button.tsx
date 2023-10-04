@@ -1,11 +1,16 @@
-import { ForwardedRef, forwardRef } from 'react'
+import React, { ForwardedRef, forwardRef, HTMLProps } from 'react'
+import { DomProps } from '../utils'
 
-interface Props {
-  text: string
+interface Props extends HTMLProps<HTMLButtonElement> {
+  children: React.ReactNode
 }
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
-  ({ text }: Props, ref: ForwardedRef<HTMLButtonElement>) => {
-    return <button ref={ref}>{text}</button>
+  ({ children, ...props }: Props, ref: ForwardedRef<HTMLButtonElement>) => {
+    return (
+      <button ref={ref} {...DomProps.extract(props)}>
+        {children}
+      </button>
+    )
   }
 )

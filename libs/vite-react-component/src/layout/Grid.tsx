@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { HTMLProps } from 'react'
 
-interface Props extends React.HTMLProps<HTMLDivElement> {
+interface Props extends HTMLProps<HTMLDivElement> {
   cell: number
   children?: React.ReactNode
 }
