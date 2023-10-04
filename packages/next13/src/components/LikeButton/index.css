@@ -1,0 +1,14 @@
+.like-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    color: #5CB85C;
+    border: 1px solid #5CB85C;
+    background-color: #FFF;
+    padding: 4px 8px;
+}
+
+.like-button.like-button__status-like, .like-button:hover {
+    color: #fff;
+    background-color: #5CB85C;
+}

@@ -5,7 +5,9 @@
   "description": "리액트로 구현하는 리얼 월드 프로젝트",
   "main": "index.js",
   "scripts": {
-    "prepare": "cd libs/vite-react-component && npm run build",
+    "prepare:component": "cd libs/vite-react-component && npm run build",
+    "prepare:libs": "cd libs/utils && npm run build",
+    "prepare": "npm run prepare:component && npm run prepare:libs",
     "next13:dev": "npm run prepare && cd packages/next13 && npm run dev"
   },
   "repository": {
