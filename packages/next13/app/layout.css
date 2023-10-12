@@ -1,3 +1,11 @@
+html, body {
+    min-width: 676px;
+}
+
+.main__header {
+    margin: auto;
+}
+
 .main__footer {
     bottom: 0;
     position: fixed;

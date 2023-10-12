@@ -1,7 +1,7 @@
 import { sleep } from './timer'
 
-export const request = (baseUrl: string) => {
-  return fetch(baseUrl)
+export const request = <T extends unknown>(url: string): Promise<T> => {
+  return fetch(url)
     .then((res) => {
       return Promise.resolve(res.json())
     })

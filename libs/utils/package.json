@@ -14,13 +14,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/@react-component.umd.js",
-  "module": "./dist/@react-component.es.js",
+  "main": "./dist/@utils.umd.js",
+  "module": "./dist/@utils.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/@react-component.es.js",
-      "require": "./dist/@react-component.umd.js"
+      "import": "./dist/@utils.es.js",
+      "require": "./dist/@utils.umd.js"
     }
   },
   "devDependencies": {

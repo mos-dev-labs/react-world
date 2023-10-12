@@ -22,6 +22,8 @@ export const Feed = ({
             className="feed__user-image"
             src={user.image}
             alt={user.userName}
+            width={32}
+            height={32}
           />
           <div>
             <h3 className="feed__user-name">{user.userName}</h3>

@@ -2,6 +2,15 @@
 const nextConfig = {
   experimental: {
     typedRoutes: true
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'api.realworld.io',
+        port: ''
+      }
+    ]
   }
 }
 
